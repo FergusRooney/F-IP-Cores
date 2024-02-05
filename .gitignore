@@ -1,0 +1,8 @@
+# Ignore waveform files
+*.vcd
+
+# Ignore all folders called work including in subdirectories
+**/work/
+
+
+
