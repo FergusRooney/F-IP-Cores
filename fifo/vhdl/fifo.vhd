@@ -13,7 +13,6 @@ entity fifo is
         rst_polarity_g : std_ulogic := '0'
     );
     port (
-        
         clk_i   : in std_ulogic;
         --! Active high clock enable
         clk_en_i : in std_ulogic;
