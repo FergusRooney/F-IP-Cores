@@ -1,8 +1,18 @@
-# Ignore waveform files
+# Remove waveform files 
 *.vcd
 
-# Ignore all folders called work including in subdirectories
+# Remove all folders called work including in subdirectories
 **/work/
+
+# Remove python cache files
+**/__pycache__/
+
+# Remove cocotb artificats
+**/sim_build/
+
+# Remove cocotb results files
+**results.xml
+
 
 
 
