@@ -2,17 +2,18 @@
 *.vcd
 
 # Remove all folders called work including in subdirectories
-**/work/
+work/
 
 # Remove python cache files
-**/__pycache__/
+__pycache__/
 
 # Remove cocotb artificats
-**/sim_build/
+sim_build/
 
 # Remove cocotb results files
 **results.xml
 
+.vscode/
 
 
 

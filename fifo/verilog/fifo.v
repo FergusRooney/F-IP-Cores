@@ -46,11 +46,4 @@ module fifo #(parameter data_word_size_g = 8,
 	assign w_full_o = fifo_counter == num_fifo_elements_g ? 1'b1 : 1'b0; 
     assign r_empty_o = fifo_counter == 0 ? 1'b1 : 1'b0;
 
-
-    // integer idx; // Dump out fifo contents for simulation
-    // initial begin
-    //   $dumpfile("dump1.vcd");
-    //   for (idx = 0; idx < num_fifo_elements_g; idx = idx + 1) $dumpvars(0, fifo_reg[idx]);
-    // end
- 
 endmodule 

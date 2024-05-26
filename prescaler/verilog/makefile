@@ -7,7 +7,7 @@ WORKDIR = work
 
 #Iverilog CONFIG
 iverilog = iverilog
-iverilog_flags  = 
+iverilog_flags = -g2012
 
 STOP_TIME = 200us
 
@@ -25,7 +25,8 @@ ifeq ($(strip $(tb)),)
 	@exit 1
 endif
 	@mkdir $(WORKDIR)
-	iverilog -o $(WORKDIR)/${tb}.vvp  tb_${tb}.v ${tb}.v
+	dir
+	iverilog ${iverilog_flags} -o $(WORKDIR)/${tb}.vvp  tb_${tb}.v ${tb}.v 
 	
 run:
 	@vvp $(WORKDIR)/${tb}.vvp
